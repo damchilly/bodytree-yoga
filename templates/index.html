@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BodyTree Yoga</title>
+  <meta name="description" content="BodyTree Yoga — rooted movement for a steadier life." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,450;0,9..144,550;0,9..144,600;1,9..144,450&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+  <link rel="icon" href="{{ url_for('static', filename='img/logo.svg') }}" type="image/svg+xml" />
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <a class="brand-lockup" href="#home" data-tab="home">
+      <img src="{{ url_for('static', filename='img/logo.svg') }}" alt="" width="42" height="42" />
+      <span>BodyTree Yoga</span>
+    </a>
+    <nav class="nav-tabs" role="tablist" aria-label="Site sections">
+      <button type="button" role="tab" id="tab-home" aria-controls="panel-home" aria-selected="true" data-tab="home">Home</button>
+      <button type="button" role="tab" id="tab-about" aria-controls="panel-about" aria-selected="false" data-tab="about">About</button>
+      <button type="button" role="tab" id="tab-services" aria-controls="panel-services" aria-selected="false" data-tab="services">Services</button>
+      <button type="button" role="tab" id="tab-contact" aria-controls="panel-contact" aria-selected="false" data-tab="contact">Contact</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-label="BodyTree Yoga welcome">
+      <div class="hero-media" aria-hidden="true">
+        <img
+          src="{{ url_for('static', filename='img/hero.jpg') }}"
+          alt=""
+          width="1600"
+          height="900"
+        />
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-brand">
+          <div class="logo-mark">
+            <img
+              src="{{ url_for('static', filename='img/logo.jpg') }}"
+              alt="BodyTree Yoga logo"
+              width="96"
+              height="96"
+            />
+          </div>
+          <h1>Body<em>Tree</em><br />Yoga</h1>
+        </div>
+        <p class="hero-lead">Rooted movement for a steadier life — grow strong from the ground up.</p>
+        <div class="cta-row">
+          <button type="button" class="btn btn-primary" data-tab="services">Explore classes</button>
+          <button type="button" class="btn btn-ghost" data-tab="contact">Book a visit</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="panels" aria-live="polite">
+      <article
+        class="panel is-active"
+        id="panel-home"
+        role="tabpanel"
+        aria-labelledby="tab-home"
+      >
+        <p class="panel-eyebrow">Welcome</p>
+        <h2>Come as you are. Leave more rooted.</h2>
+        <p>
+          BodyTree Yoga is a neighborhood studio where breath, balance, and quiet strength meet.
+          Use the tabs above to learn our story, browse classes, or reach out to visit.
+        </p>
+      </article>
+
+      <article
+        class="panel"
+        id="panel-about"
+        role="tabpanel"
+        aria-labelledby="tab-about"
+        hidden
+      >
+        <p class="panel-eyebrow">About</p>
+        <h2>A studio grown from stillness and soil.</h2>
+        <p>
+          BodyTree Yoga began with a simple belief: the body is a living tree — flexible when tended,
+          resilient when rooted. Our practice blends classical alignment with slow, nature-inspired
+          sequencing so every student can feel grounded without rushing toward perfection.
+        </p>
+        <p style="margin-top: 1rem;">
+          Whether you are unrolling a mat for the first time or returning after years away, you will
+          find soft light, clear cueing, and a community that favors presence over performance.
+        </p>
+      </article>
+
+      <article
+        class="panel"
+        id="panel-services"
+        role="tabpanel"
+        aria-labelledby="tab-services"
+        hidden
+      >
+        <p class="panel-eyebrow">Services</p>
+        <h2>Classes that meet you where you are.</h2>
+        <p>Small groups, thoughtful pacing, and room to breathe.</p>
+        <ul class="service-list">
+          <li>
+            <span class="service-index">01</span>
+            <div>
+              <h3>Root Flow</h3>
+              <p>Gentle vinyasa that builds balance and warmth — ideal for beginners and busy minds.</p>
+            </div>
+          </li>
+          <li>
+            <span class="service-index">02</span>
+            <div>
+              <h3>Canopy Strength</h3>
+              <p>Standing postures and mindful power work to grow stability through the legs and core.</p>
+            </div>
+          </li>
+          <li>
+            <span class="service-index">03</span>
+            <div>
+              <h3>Evening Grounding</h3>
+              <p>Restorative shapes, breathwork, and soft lighting to settle the nervous system.</p>
+            </div>
+          </li>
+          <li>
+            <span class="service-index">04</span>
+            <div>
+              <h3>Private Sessions</h3>
+              <p>One-on-one coaching tailored to injury recovery, mobility goals, or deeper practice.</p>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+      <article
+        class="panel"
+        id="panel-contact"
+        role="tabpanel"
+        aria-labelledby="tab-contact"
+        hidden
+      >
+        <p class="panel-eyebrow">Contact</p>
+        <h2>Visit the studio — or send a note.</h2>
+        <p>We would love to welcome you to your first class.</p>
+
+        <dl class="contact-grid">
+          <div>
+            <dt>Studio</dt>
+            <dd>142 Willow Grove Ave</dd>
+          </div>
+          <div>
+            <dt>Email</dt>
+            <dd><a href="mailto:hello@bodytreeyoga.com">hello@bodytreeyoga.com</a></dd>
+          </div>
+          <div>
+            <dt>Phone</dt>
+            <dd><a href="tel:+15550148200">(555) 014-8200</a></dd>
+          </div>
+        </dl>
+
+        <form class="contact-form" id="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" required autocomplete="name" placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required autocomplete="email" placeholder="you@example.com" />
+          </label>
+          <label>
+            Message
+            <textarea name="message" required placeholder="Tell us what you are looking for…"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-note" id="form-note" role="status"></p>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> BodyTree Yoga. Grow from the ground up.</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

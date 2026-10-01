@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="BodyTree Yoga logo">
+  <defs>
+    <linearGradient id="leaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2F6B55"/>
+      <stop offset="100%" stop-color="#1A3C34"/>
+    </linearGradient>
+  </defs>
+  <!-- Canopy -->
+  <path fill="url(#leaf)" d="M60 12c-14 8-24 22-26 38 8-6 16-9 26-9s18 3 26 9c-2-16-12-30-26-38z"/>
+  <path fill="#3F8A6E" opacity="0.85" d="M34 52c-8 4-14 12-16 22 10-4 18-5 26-3-2-8-4-14-10-19z"/>
+  <path fill="#3F8A6E" opacity="0.85" d="M86 52c8 4 14 12 16 22-10-4-18-5-26-3 2-8 4-14 10-19z"/>
+  <!-- Figure / trunk -->
+  <path fill="#1A3C34" d="M57 48h6v28c0 4-1 8-3 11h0c-2-3-3-7-3-11V48z"/>
+  <!-- Arms as branches -->
+  <path fill="none" stroke="#1A3C34" stroke-width="3.5" stroke-linecap="round" d="M60 58c-10-2-18 4-22 12"/>
+  <path fill="none" stroke="#1A3C34" stroke-width="3.5" stroke-linecap="round" d="M60 58c10-2 18 4 22 12"/>
+  <!-- Head -->
+  <circle cx="60" cy="42" r="5.5" fill="#1A3C34"/>
+  <!-- Grounded base / roots -->
+  <path fill="none" stroke="#1A3C34" stroke-width="3.5" stroke-linecap="round" d="M48 98c4-8 8-12 12-12s8 4 12 12"/>
+  <path fill="none" stroke="#2F6B55" stroke-width="2.5" stroke-linecap="round" d="M42 102c6-4 12-6 18-6s12 2 18 6"/>
+</svg>
